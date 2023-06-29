@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <title>Edit Item</title>
+</head>
+<body>
+<div align="center">
+    <h1>Edit Item</h1>
+    <br />
+    <form action="#"  th:object="${tv}" method="post">
+
+        <table border="0" cellpadding="10">
+            <tr>
+                <td>ID:</td>
+                <td><input type="text" th:field="*{idtv}" readonly="readonly" /></td>
+            </tr>
+            <tr>
+                <td>Stasiun TV:</td>
+                <td><input type="text" th:field="*{stasiun_tv}" /></td>
+            </tr>
+            <tr>
+                <td>Durasi:</td>
+                <td><input type="radio" th:field="*{durasi}" value="30 detik" />30 detik
+                    <input type="radio" th:field="*{durasi}" value="60 detik" />60 detik<br/></td>
+                <!--<td><input type="text" th:field="*{durasi}" /></td>-->
+            </tr>
+            <tr>
+                <td>kategori:</td>
+                <td><input type="radio" th:field="*{kategori}" value="day time" />day time
+                    <input type="radio" th:field="*{kategori}" value="prime time" />prime time<br/></td>
+                <!--<td><input type="text" th:field="*{kategori}" /></td>-->
+            </tr>
+            <tr>
+                <td>harga:</td>
+                <td><input type="text" th:field="*{budget_tv}" /></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit">Save</button> </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>

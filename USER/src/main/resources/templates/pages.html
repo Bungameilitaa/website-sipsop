@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Pages</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link th:href = "@{/css/pages.css}" rel = "stylesheet"/>
+    <link th:href = "@{/css/navbar.css}" rel = "stylesheet"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/navbars/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
+    <div class="container">
+        <img src="../static/images/Sip.png"
+             th:src="@{images/Sip.png}" height="70" alt="" loading="lazy" />
+        <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+                aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon d-flex justify-content-start align-items-center">
+        <i class="fas fa-bars"></i>
+      </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" aria-current="page" href="/pages">Pages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/tvpages">Tv</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/radiopages">Radio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/sosmedpages">Sosial Media</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Header -->
+<header class="w3-container w3-shakespeare w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo">WELCOME TO</h1>
+    <h2 class="w3-margin w3-jumbo">SIPSOP</h2>
+</header></br>
+
+<div class="container bootstrap snippets bootdey">
+    <div class="pricing-table pricing-three-column row">
+        <div class="plan col-sm-4 col-lg-4">
+            <div class="plan-name-bronze">
+                <h2>TV</h2>
+            </div>
+            <ul>
+                <li class="plan-feature">Channel Tv</li>
+                <li class="plan-feature">Durasi</li>
+                <li class="plan-feature">Jam Tayang</li>
+                <li class="plan-feature"><a href="/tvpages" class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Select</a></li>
+            </ul>
+        </div>
+        <div style="z-index:55;" class="plan col-sm-4 col-lg-4">
+            <div class="plan-name-silver">
+                <h2>Radio</h2>
+            </div>
+            <ul>
+                <li class="plan-feature">Channel Radio</li>
+                <li class="plan-feature">Durasi</li>
+                <li class="plan-feature">Jam Tayang</li>
+                <li class="plan-feature"><a href="/radiopages" class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Select</a></li>
+            </ul>
+        </div>
+        <div class="plan col-sm-4 col-lg-4">
+            <div class="plan-name-gold">
+                <h2>Sosial Media</h2>
+            </div>
+            <ul>
+                <li class="plan-feature">Sosial media</li>
+                <li class="plan-feature">Tipe Influencer</li>
+                <li></li>
+                <li class="plan-feature"><a href="/sosmedpages" class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Select</a></li>
+            </ul>
+        </div>
+    </div>
+</div></br>
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+    <div class="w3-xlarge w3-padding-32">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+</body>
+</html>
+
+</body>
+</html>

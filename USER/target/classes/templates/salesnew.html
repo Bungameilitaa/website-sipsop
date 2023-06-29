@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <title>New Sale</title>
+</head>
+<body>
+<div align="center">
+    <h1>Enter New Sale</h1>
+    <br />
+    <form action="#" th:action="@{/savesalestv"  th:object="${tvtransaction}"
+          method="post">
+        <!--<a href="/indexitem" onClick="MyWindow=window.open('http://localhost:8080/indexitem','MyWindow','width=600,height=300'); return false;">Check Item</a>
+-->
+        <table border="0" cellpadding="10">
+            <tr>
+            <!--<tr>
+                <td>ID:</td>
+                <td th:field="*{tv}"><input type="text" th:field="*{idtv_fk}" readonly="readonly" th:text="${tv.stasiun_tv}" /></td>
+            </tr>
+            <tr>
+                <td>harga:</td>
+                <td th:field="*{tv}"><input type="text" th:field="*{harga}" readonly="readonly" th:text="${tv.budget_tv}"/></td>
+                &lt;!&ndash;<td><input type="text" th:field="*{kategori}" /></td>&ndash;&gt;
+            </tr>-->
+                <td>ID TV:</td>
+                <!--<td><input type="text" th:field="*{iditem}" /></td>-->
+                <td>
+                    <select th:field="*{tv}" >
+                    <!--<select >-->
+                        <!--<option value="0">Select Item</option>-->
+                        <option th:each="tv : ${tvs}" th:value="${tv.idtv}" th:text="${tv.stasiun_tv}"></option>
+                    <!--<option th:each="p : ${listEducation}" th:value="${p}" th:text="${p}" />-->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Amount (USD):</td>
+                <td><input type="text" th:field="*{harga}" /></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit">Save</button> </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
